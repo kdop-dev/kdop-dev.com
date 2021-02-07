@@ -8,7 +8,7 @@ subtitle: kdop-dev cursos de istio e kubernetes
 
 Istio avançado para iniciantes (The Advanced Istio for Beginners)
 
-Lançamento: Versão [Katacoda - Istio | Istio avançado para iniciantes](https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso)
+Lançamento: Versão [Katacoda - Istio avançado para iniciantes](https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso)
 
 ## Conteúdo
 
@@ -47,7 +47,7 @@ A curva de aprendizado do Istio é relativamente íngreme - por isso projetamos 
 Há três versões deste curso:
 
 * [Github - asantos2000/katacoda-scenarios](https://github.com/asantos2000/katacoda-scenarios)
-* [Katacoda - Istio | Istio avançado para iniciantes](https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso)
+* [Katacoda - Istio avançado para iniciantes](https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso)
 * [Udemy - Istio avançado para iniciantes - Anderson/ Daniel e Leonardo - Estimado 20/03/2021]()
 
 ## Curso no Github
