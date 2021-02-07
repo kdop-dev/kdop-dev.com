@@ -1,323 +1,62 @@
-<!DOCTYPE html><html><head>
-      <title>kdop-dev</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:///c:\Users\adsantos\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.16\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <style>
-      /**
- * prism.js Github theme based on GitHub's theme.
- * @author Sam Clarke
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #333;
-  background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.4;
+---
+layout: home
+title: kdop-dev
+subtitle: kdop-dev cursos de istio e kubernetes
+---
 
-  -moz-tab-size: 8;
-  -o-tab-size: 8;
-  tab-size: 8;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
-  overflow: auto;
-  /* border: 1px solid #ddd; */
-  border-radius: 3px;
-  /* background: #fff; */
-  background: #f5f5f5;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-  background: #f5f5f5;
-}
-
-.token.comment,
-.token.blockquote {
-  color: #969896;
-}
-
-.token.cdata {
-  color: #183691;
-}
-
-.token.doctype,
-.token.punctuation,
-.token.variable,
-.token.macro.property {
-  color: #333;
-}
-
-.token.operator,
-.token.important,
-.token.keyword,
-.token.rule,
-.token.builtin {
-  color: #a71d5d;
-}
-
-.token.string,
-.token.url,
-.token.regex,
-.token.attr-value {
-  color: #183691;
-}
-
-.token.property,
-.token.number,
-.token.boolean,
-.token.entity,
-.token.atrule,
-.token.constant,
-.token.symbol,
-.token.command,
-.token.code {
-  color: #0086b3;
-}
-
-.token.tag,
-.token.selector,
-.token.prolog {
-  color: #63a35c;
-}
-
-.token.function,
-.token.namespace,
-.token.pseudo-element,
-.token.class,
-.token.class-name,
-.token.pseudo-class,
-.token.id,
-.token.url-reference .token.variable,
-.token.attr-name {
-  color: #795da3;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.title,
-.token.title .token.punctuation {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.token.list {
-  color: #ed6a43;
-}
-
-.token.inserted {
-  background-color: #eaffea;
-  color: #55a532;
-}
-
-.token.deleted {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
-
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-
-/* JSON */
-.language-json .token.property {
-  color: #183691;
-}
-
-.language-markup .token.tag .token.punctuation {
-  color: #333;
-}
-
-/* CSS */
-code.language-css,
-.language-css .token.function {
-  color: #0086b3;
-}
-
-/* YAML */
-.language-yaml .token.atrule {
-  color: #63a35c;
-}
-
-code.language-yaml {
-  color: #183691;
-}
-
-/* Ruby */
-.language-ruby .token.function {
-  color: #333;
-}
-
-/* Markdown */
-.language-markdown .token.url {
-  color: #795da3;
-}
-
-/* Makefile */
-.language-makefile .token.symbol {
-  color: #795da3;
-}
-
-.language-makefile .token.variable {
-  color: #183691;
-}
-
-.language-makefile .token.builtin {
-  color: #0086b3;
-}
-
-/* Bash */
-.language-bash .token.keyword {
-  color: #0086b3;
-}
-
-/* highlight */
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-pre[data-line] .line-highlight-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  display: block;
-  width: 100%;
-}
-
-pre[data-line] .line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: hsla(24, 20%, 50%,.08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
-}
-
-pre[data-line] .line-highlight:before, 
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: .4em;
-  left: .6em;
-  min-width: 1em;
-  padding: 0 .5em;
-  background-color: hsla(24, 20%, 50%,.4);
-  color: hsl(24, 20%, 95%);
-  font: bold 65%/1.5 sans-serif;
-  text-align: center;
-  vertical-align: .3em;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px white;
-}
-
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-end);
-  top: auto;
-  bottom: .4em;
-}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
-
-      </style>
-    </head>
-    <body for="html-export">
-      <div class="mume markdown-preview  ">
-      <div><p><a href="https://gitpod.io/#https://github.com/kdop-dev/istio-curso"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod ready-to-code"></a></p>
-<p>h Istio avan&#xE7;ado para iniciantes (The Advanced Istio for Beginners)</p>
-<p>Lan&#xE7;amento: Vers&#xE3;o <a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio | Istio avan&#xE7;ado para iniciantes</a></p>
-<h2 class="mume-header" id="conte%C3%BAdo">Conte&#xFA;do</h2>
-
-<p>A curva de aprendizado do Istio &#xE9; relativamente &#xED;ngreme - por isso projetamos este curso para ser o mais claro e compreens&#xED;vel poss&#xED;vel e espero que com as demonstra&#xE7;&#xF5;es pr&#xE1;ticas voc&#xEA; tamb&#xE9;m se divirta ao longo do caminho</p>
+<p><a href="https://gitpod.io/#https://github.com/kdop-dev/istio-curso"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod ready-to-code"></a></p>
+<p>Istio avançado para iniciantes (The Advanced Istio for Beginners)</p>
+<p>Lançamento: Versão <a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio | Istio avançado para iniciantes</a></p>
+<h2 id="conte-do">Conteúdo</h2>
+<p>A curva de aprendizado do Istio é relativamente íngreme - por isso projetamos este curso para ser o mais claro e compreensível possível e espero que com as demonstrações práticas você também se divirta ao longo do caminho</p>
 <ul>
-<li>Na <a href="./01_preparacao.ipynb">PARTE 1</a> instalaremos as ferramentas necess&#xE1;rias na sua m&#xE1;quina windows, mac e linux, tais como:
-<ul>
+<li>Na <a href="./01_preparacao.ipynb">PARTE 1</a> instalaremos as ferramentas necessárias na sua máquina windows, mac e linux, tais como:<ul>
 <li>kubectl - linha de comando para interagir com o kubernetes</li>
-<li>istioctl - utilit&#xE1;rio de linha de comando para instalar e configurar a instala&#xE7;&#xE3;o do istio e acessar seus dashboards e configura&#xE7;&#xF5;es.</li>
+<li>istioctl - utilitário de linha de comando para instalar e configurar a instalação do istio e acessar seus dashboards e configurações.</li>
 <li>stern - ferrameta para acessar logs dos containers</li>
-<li>http e curl - para enviarmos requisi&#xE7;&#xF5;es http para nossos servi&#xE7;os</li>
+<li>http e curl - para enviarmos requisições http para nossos serviços</li>
 </ul>
 </li>
 <li>Instalaremos um cluster de kubernetes econfiguraremos acesso das ferramentas a ele</li>
-<li>E iremos configurar sua m&#xE1;quina para acessar a parte interativa do curso.</li>
-<li>Na <a href="./02_execucao_istio.ipynb">PARTE 2</a> vamos instalar o Istio no nosso cluster e fazer o <em>deploy</em> da nossa primeira aplica&#xE7;&#xE3;o</li>
-<li>Na <a href="./03_visualizacao_kiali.ipynb">PARTE 3</a> iremos instalar e acessar o dashboard do Kiali, uma das melhores ferramentas integradas com o Istio</li>
-<li>Na <a href="./04_instalando_simul_shop.ipynb">PARTE 4</a> voc&#xEA; iremos apresent&#xE1;-lo a nossa aplica&#xE7;&#xE3;o simul-shop.</li>
-<li>Inspirado no micro-sock, desenvolvida pela weaveworks, ela foi desenvolvida em python e empacotada como uma imagem docker, &#xE9; configur&#xE1;vel para emular microsservi&#xE7;os e, no nosso curso, foi configurada para simular uma loja virtual.</li>
-<li>Na <a href="./05_multi_container_pods.ipynb">PARTE 5</a> discutiremos sobre pe&#xE7;a fundamental do Istio, o Envoy.</li>
-<li>Faremos uma configura&#xE7;&#xE3;o b&#xE1;sica do Envoy e discutiremos porque o Istio adiciona o Envoy automaticamente nas suas aplica&#xE7;&#xF5;es</li>
-<li>Na <a href="./06_arquitetura_do_istio.ipynb">PARTE 6</a> apresentaremos a arquitetura do Istio, o que &#xE9; uma malha de servi&#xE7;os, como ela funciona e porque ele &#xE9; t&#xE3;o importante no desenvolvimento de arquiteturas orientadas a servi&#xE7;o.</li>
-<li>Na <a href="./07_telemetria.ipynb">PARTE 7</a> apresentaremos as ferramentas de telemetria do Istio, veremos mais sobre o Kiali, o qual veremos com mais detalhes, tamb&#xE9;m o Jaeger para rastreamento distribu&#xED;do de logs e como ajustar sua aplica&#xE7;&#xE3;o para um melhor resultado e o grafana com os dashboards de m&#xE9;tricas pr&#xE9;-configurados com a instala&#xE7;&#xE3;o do Istio.</li>
-<li>Na <a href="./08_gerenciamento_trafego_visao_geral.ipynb">PARTE 8</a> Iremos fazer nosso primeiro desenvolvimento para o Istio, configuraremos o roteamento de tr&#xE1;fego para uma entrega can&#xE1;rio, uma dos blocos fundamentais do Istio e que permite criar cen&#xE1;rios complexos de forma simples.</li>
-<li>Na <a href="./09_load_balancing.ipynb">PARTE 9</a> iremos configurar o balanceamento de carga que tem como objetivo distribuir a carga de forma uniforme aplicando diferentes algoritmos. O Istio tem um grande conjunto de recursos para balanceamento de carga que v&#xE3;o muito al&#xE9;m dos oferecidos pelo kubernetes.</li>
-<li>Na <a href="./10_gateways.ipynb">PARTE 10</a> apresentaremos os gateways, aplica&#xE7;&#xF5;es independentes (Envoys) que controlam o tr&#xE1;fego das requisi&#xE7;&#xF5;es que entream e saem da malha de servi&#xE7;os. Eles recebem as requisi&#xE7;&#xF5;es, avaliam, criam logs e redirecionam para os servi&#xE7;os dentro e fora da malha.</li>
-<li>Na <a href="./11_gerenciamento_trafego_avancado.ipynb">PARTE 11</a> retomamos a configura&#xE7;&#xE3;o para gerenciamento de tr&#xE1;fego com cen&#xE1;rios mais complexo como:
-<ul>
+<li>E iremos configurar sua máquina para acessar a parte interativa do curso.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/02_execucao_istio.ipynb">PARTE 2</a> vamos instalar o Istio no nosso cluster e fazer o <em>deploy</em> da nossa primeira aplicação</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/03_visualizacao_kiali.ipynb">PARTE 3</a> iremos instalar e acessar o dashboard do Kiali, uma das melhores ferramentas integradas com o Istio</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/04_instalando_simul_shop.ipynb">PARTE 4</a> você iremos apresentá-lo a nossa aplicação simul-shop.</li>
+<li>Inspirado no micro-sock, desenvolvida pela weaveworks, ela foi desenvolvida em python e empacotada como uma imagem docker, é configurável para emular microsserviços e, no nosso curso, foi configurada para simular uma loja virtual.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/05_multi_container_pods.ipynb">PARTE 5</a> discutiremos sobre peça fundamental do Istio, o Envoy.</li>
+<li>Faremos uma configuração básica do Envoy e discutiremos porque o Istio adiciona o Envoy automaticamente nas suas aplicações</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/06_arquitetura_do_istio.ipynb">PARTE 6</a> apresentaremos a arquitetura do Istio, o que é uma malha de serviços, como ela funciona e porque ele é tão importante no desenvolvimento de arquiteturas orientadas a serviço.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/07_telemetria.ipynb">PARTE 7</a> apresentaremos as ferramentas de telemetria do Istio, veremos mais sobre o Kiali, o qual veremos com mais detalhes, também o Jaeger para rastreamento distribuído de logs e como ajustar sua aplicação para um melhor resultado e o grafana com os dashboards de métricas pré-configurados com a instalação do Istio.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/08_gerenciamento_trafego_visao_geral.ipynb">PARTE 8</a> Iremos fazer nosso primeiro desenvolvimento para o Istio, configuraremos o roteamento de tráfego para uma entrega canário, uma dos blocos fundamentais do Istio e que permite criar cenários complexos de forma simples.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/09_load_balancing.ipynb">PARTE 9</a> iremos configurar o balanceamento de carga que tem como objetivo distribuir a carga de forma uniforme aplicando diferentes algoritmos. O Istio tem um grande conjunto de recursos para balanceamento de carga que vão muito além dos oferecidos pelo kubernetes.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/10_gateways.ipynb">PARTE 10</a> apresentaremos os gateways, aplicações independentes (Envoys) que controlam o tráfego das requisições que entream e saem da malha de serviços. Eles recebem as requisições, avaliam, criam logs e redirecionam para os serviços dentro e fora da malha.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/11_gerenciamento_trafego_avancado.ipynb">PARTE 11</a> retomamos a configuração para gerenciamento de tráfego com cenários mais complexo como:<ul>
 <li>rotas baseadas na URI</li>
-<li>rotas baseadas nas vari&#xE1;vels do cabe&#xE7;alho da requisi&#xE7;&#xE3;o http</li>
-<li>Combina&#xE7;&#xE3;o de multiplas regras de roteamento</li>
-<li>Configura&#xE7;&#xF5;es de resili&#xEA;ncia para retentativas, tratamento de <em>timeouts</em> e prote&#xE7;&#xE3;o de servi&#xE7;os com <em>circuit brackers</em></li>
-<li>E configura&#xE7;&#xF5;es para auxiliar nos testes como o espelhamento de tr&#xE1;fego</li>
+<li>rotas baseadas nas variávels do cabeçalho da requisição http</li>
+<li>Combinação de multiplas regras de roteamento</li>
+<li>Configurações de resiliência para retentativas, tratamento de <em>timeouts</em> e proteção de serviços com <em>circuit brackers</em></li>
+<li>E configurações para auxiliar nos testes como o espelhamento de tráfego</li>
 </ul>
 </li>
-<li>A <a href="./12_seguranca.ipynb">PARTE 12</a> foi dividida em duas, na primeira apresentaremos como o Istio tr&#xE1;s a seguran&#xE7;a com parte integral da solu&#xE7;&#xE3;o, como customiz&#xE1;-la e controla-la. Veremos como negar e autorizar acesso aos nossos servi&#xE7;os e bloquear todo o tr&#xE1;fego n&#xE3;o autorizado para fora da nossa malha de servi&#xE7;os.</li>
-<li>Na <a href="./12a_seguranca.ipynb">segunda parte</a>, veremos como utilizar JWT tokens na autoriza&#xE7;&#xE3;o de acessos (RBAC) para os servi&#xE7;os</li>
-<li>Na <a href="./13_engenharia_caos.ipynb">PARTE 13</a> vamos explorar os recursos do Istio para a engenharia do caos, simularemos falhas nos servi&#xE7;os para avaliar como nossa malha se comporta.</li>
-<li>Na <a href="./14_istio_vms.ipynb">PARTE 14</a> trataremos de como utilizar o Istio fora do cluster de kubernetes, trazendo m&#xE1;quinas virtuais para a malha de servi&#xE7;os. Esse &#xE9; um tema que tem atra&#xED;do bastante a aten&#xE7;&#xE3;o da comunidade, para atender a necessidade de cargas de trabalho que n&#xE3;o se encaixam bem em containers, mas se beneficiari&#xE3;o das funcionalidades e integra&#xE7;&#xE3;o com a malha de servi&#xE7;os, criando malhas h&#xED;bridas compostas de m&#xE1;quinas virtuais e PODs.</li>
-<li>As <a href="./15_referencias.md">PARTE 15</a> e <a href="./16_contribuicoes.md">16</a> s&#xE3;o respectivamente as refer&#xEA;ncias, recomenda&#xE7;&#xF5;es e materiais para aprofundamento no tema e como contribuir com esse curso. Voc&#xEA; poder&#xE1; enviar pedidos de novos exemplos ou submeter os seus para que fa&#xE7;am parte desse curso. Manteremos ele atualizado e crescendo em conte&#xFA;do para mant&#xEA;-lo afiado.</li>
+<li>A <a href="https://github.com/kdop-dev/istio-curso/blob/master/12_seguranca.ipynb">PARTE 12</a> foi dividida em duas, na primeira apresentaremos como o Istio trás a segurança com parte integral da solução, como customizá-la e controla-la. Veremos como negar e autorizar acesso aos nossos serviços e bloquear todo o tráfego não autorizado para fora da nossa malha de serviços.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/12a_seguranca.ipynb">segunda parte</a>, veremos como utilizar JWT tokens na autorização de acessos (RBAC) para os serviços</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/13_engenharia_caos.ipynb">PARTE 13</a> vamos explorar os recursos do Istio para a engenharia do caos, simularemos falhas nos serviços para avaliar como nossa malha se comporta.</li>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/14_istio_vms.ipynb">PARTE 14</a> trataremos de como utilizar o Istio fora do cluster de kubernetes, trazendo máquinas virtuais para a malha de serviços. Esse é um tema que tem atraído bastante a atenção da comunidade, para atender a necessidade de cargas de trabalho que não se encaixam bem em containers, mas se beneficiarião das funcionalidades e integração com a malha de serviços, criando malhas híbridas compostas de máquinas virtuais e PODs.</li>
+<li>As <a href="https://github.com/kdop-dev/istio-curso/blob/master/15_referencias.md">PARTE 15</a> e <a href="./16_contribuicoes.md">16</a> são respectivamente as referências, recomendações e materiais para aprofundamento no tema e como contribuir com esse curso. Você poderá enviar pedidos de novos exemplos ou submeter os seus para que façam parte desse curso. Manteremos ele atualizado e crescendo em conteúdo para mantê-lo afiado.</li>
 </ul>
-<p>H&#xE1; tr&#xEA;s vers&#xF5;es deste curso:</p>
+<p>Há três versões deste curso:</p>
 <ul>
 <li><a href="https://github.com/asantos2000/katacoda-scenarios">Github - asantos2000/katacoda-scenarios</a></li>
-<li><a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio | Istio avan&#xE7;ado para iniciantes</a></li>
-<li><a href>Udemy - Istio avan&#xE7;ado para iniciantes - Anderson/ Daniel e Leonardo - Estimado 20/03/2021</a></li>
+<li><a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio | Istio avançado para iniciantes</a></li>
+<li><a href="">Udemy - Istio avançado para iniciantes - Anderson/ Daniel e Leonardo - Estimado 20/03/2021</a></li>
 </ul>
-<h2 class="mume-header" id="curso-no-github">Curso no Github</h2>
-
-<p>Para obter os artefatos necess&#xE1;rios para o curso, clone esse reposit&#xF3;rio:</p>
-<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">git</span> clone https://github.com/kdop-dev/istio-curso.git
-</pre><p>Para iniciar o curso voc&#xEA; precisa:</p>
+<h2 id="curso-no-github">Curso no Github</h2>
+<p>Para obter os artefatos necessários para o curso, clone esse repositório:</p>
+<p>git clone <a href="https://github.com/kdop-dev/istio-curso.git">https://github.com/kdop-dev/istio-curso.git</a></p>
+<p>Para iniciar o curso você precisa:</p>
 <ul>
 <li>Acesso a uma infra para o cluster, pode ser um notebook com pelo menos 16GB de RAM ou uma conta ou assinatura de uma nuvem.</li>
-<li>Uma notebook, desktop ou m&#xE1;quina virtual para executar o curso</li>
+<li>Uma notebook, desktop ou máquina virtual para executar o curso</li>
 <li>linux (ou wsl2)</li>
 <li>docker-desktop (win ou mac)</li>
 <li>docker e kubernetes (para linux ou um cluster na nuvem)</li>
@@ -325,66 +64,13 @@ pre[data-line] .line-highlight[data-end]:after {
 <li>conda para gerenciar ambientes de python</li>
 <li><a href="https://github.com/rakutentech/jwkgen">jwkgen</a> para gerar certificados.</li>
 </ul>
-<h3 class="mume-header" id="criando-um-ambiente-para-execu%C3%A7%C3%A3o">Criando um ambiente para execu&#xE7;&#xE3;o</h3>
-
-<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">git</span> clone https://github.com/kdop-dev/istio-curso.git <span class="token comment"># Ou fa&#xE7;a um fork e clone o seu reposit&#xF3;rio</span>
-
-<span class="token builtin class-name">cd</span> istio-curso
-
-python -V
-<span class="token comment"># Python 3.x</span>
-
-conda create -n istio-curso <span class="token assign-left variable">python</span><span class="token operator">=</span><span class="token number">3</span>
-
-conda activate istio-curso
-
-conda <span class="token function">install</span> --file requirements.txt
-
-python -m bash_kernel.install
-
-<span class="token comment"># [Opcional] Localize o arquivo de configura&#xE7;&#xE3;o do cluster e altere o valor da vari&#xE1;vel KUBECONFIG</span>
-<span class="token comment"># N&#xE3;o necess&#xE1;rio para docker-desktop</span>
-<span class="token comment"># jupyter lab</span>
-<span class="token assign-left variable">KUBECONFIG</span><span class="token operator">=</span>~/.kube/config jupyter lab
-</pre><h4 class="mume-header" id="jupyter-lab-markdown-preview-opcional">Jupyter lab markdown preview (Opcional)</h4>
-
-<p>Por padr&#xE3;o o jupyter lab ira abrir os arquivos <em>markdown</em> no modo de edi&#xE7;&#xE3;o, mas voc&#xEA; pode selecionar abri-lo no modo <em>preview</em> clicando com o bot&#xE3;o direito sobre o nome do arquivo.</p>
-<p>Para este curso, vamos sugerir que voc&#xEA; altere essa configura&#xE7;&#xE3;o padr&#xE3;o do jupyter lab.</p>
-<p>Abra o jupyter lab (<code>jupyter lab</code>), se j&#xE1; n&#xE3;o estiver aberto, selecione no menu superior <em>Settings</em> &#x2192; <em>Advanced Settings Editor</em> e na &#xE1;rea <em>User Preferences</em> inclua o seguinte c&#xF3;digo:</p>
-<pre data-role="codeBlock" data-info="json" class="language-json"><span class="token punctuation">{</span>
-    defaultViewers<span class="token operator">:</span> <span class="token punctuation">{</span>
-        markdown<span class="token operator">:</span> <span class="token string">&quot;Markdown Preview&quot;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</pre><p>Selecione o &#xED;cone salvar &#x1F4BE; no canto superior direito da &#xE1;rea.</p>
-<p>Com essa configura&#xE7;&#xE3;o, d&#xE1; pr&#xF3;xima vez que voc&#xEA; selecionar um arquivo <em>md</em>, ele ser&#xE1; aberto no modo <em>preview</em> &#x1F44F;.</p>
-<h2 class="mume-header" id="m%C3%B3dulos">M&#xF3;dulos</h2>
-
-<p>Os exemplos est&#xE3;o em um reposit&#xF3;rio separado como submodulo</p>
-<p><code>git submodule add git@github.com:kdop-dev/istio-curso-files.git assets/</code></p>
-<h3 class="mume-header" id="generic-services">generic-services</h3>
-
-<p>O curso utiliza a imagem pronta do generic-services - <a href="assets/exemplos/generic-services">assets/exemplos/generic-services/py</a> e n&#xE3;o &#xE9; necess&#xE1;rio nenhum passo adicional para utiliz&#xE1;-la, por&#xE9;m, se voc&#xEA; desejar modific&#xE1;-la e criar sua pr&#xF3;pria imagem, o c&#xF3;digo-fonte, bem como instru&#xE7;&#xF5;es para constru&#xE7;&#xE3;o e entrega, est&#xE3;o em <a href="exemplos/generic-service/py/README.md">assets/exemplos/generic-services/py/README.md</a></p>
-<h2 class="mume-header" id="nossos-planos">Nossos planos</h2>
-
+<h3 id="generic-services">generic-services</h3>
+<p>O curso utiliza a imagem pronta do generic-services - <a href="assets/exemplos/generic-services">assets/exemplos/generic-services/py</a> e não é necessário nenhum passo adicional para utilizá-la, porém, se você desejar modificá-la e criar sua própria imagem, o código-fonte, bem como instruções para construção e entrega, estão em <a href="exemplos/generic-service/py/README.md">assets/exemplos/generic-services/py/README.md</a></p>
+<h2 id="nossos-planos">Nossos planos</h2>
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> Vers&#xE3;o para download <a href="https://github.com/kdop-dev/istio-curso">github</a> - Dez/2020</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> <a href="https://www.katacoda.com/">Katacoda</a> - Fev/2020</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> <a href="https://mybinder.org/">mybinder</a> - Previs&#xE3;o: Mar/2020</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> <a href="https://udemy.com">Udemy</a> - Previs&#xE3;o: Mar/2020</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> <a href>Kubernetes avan&#xE7;ado para iniciantes</a> - Previs&#xE3;o: Jun/2021</li>
+<li>[X] Versão para download <a href="https://github.com/kdop-dev/istio-curso">github</a> - Dez/2020</li>
+<li>[X] <a href="https://www.katacoda.com/">Katacoda</a> - Fev/2020</li>
+<li>[ ] <a href="https://mybinder.org/">mybinder</a> - Previsão: Mar/2020</li>
+<li>[ ] <a href="https://udemy.com">Udemy</a> - Previsão: Mar/2020</li>
+<li>[ ] <a href="">Kubernetes avançado para iniciantes</a> - Previsão: Jun/2021</li>
 </ul>
-</div>
-      </div>
-      
-      
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
