@@ -5,12 +5,15 @@ subtitle: kdop-dev cursos de istio e kubernetes
 ---
 
 <p><a href="https://gitpod.io/#https://github.com/kdop-dev/istio-curso"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod ready-to-code"></a></p>
+
 <p>Istio avançado para iniciantes (The Advanced Istio for Beginners)</p>
-<p>Lançamento: Versão <a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio | Istio avançado para iniciantes</a></p>
+
+<p>Lançamento: Versão <a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio avançado para iniciantes</a></p>
+
 <h2 id="conte-do">Conteúdo</h2>
 <p>A curva de aprendizado do Istio é relativamente íngreme - por isso projetamos este curso para ser o mais claro e compreensível possível e espero que com as demonstrações práticas você também se divirta ao longo do caminho</p>
 <ul>
-<li>Na <a href="./01_preparacao.ipynb">PARTE 1</a> instalaremos as ferramentas necessárias na sua máquina windows, mac e linux, tais como:<ul>
+<li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/01_preparacao.ipynb">PARTE 1</a> instalaremos as ferramentas necessárias na sua máquina windows, mac e linux, tais como:<ul>
 <li>kubectl - linha de comando para interagir com o kubernetes</li>
 <li>istioctl - utilitário de linha de comando para instalar e configurar a instalação do istio e acessar seus dashboards e configurações.</li>
 <li>stern - ferrameta para acessar logs dos containers</li>
@@ -42,12 +45,12 @@ subtitle: kdop-dev cursos de istio e kubernetes
 <li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/12a_seguranca.ipynb">segunda parte</a>, veremos como utilizar JWT tokens na autorização de acessos (RBAC) para os serviços</li>
 <li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/13_engenharia_caos.ipynb">PARTE 13</a> vamos explorar os recursos do Istio para a engenharia do caos, simularemos falhas nos serviços para avaliar como nossa malha se comporta.</li>
 <li>Na <a href="https://github.com/kdop-dev/istio-curso/blob/master/14_istio_vms.ipynb">PARTE 14</a> trataremos de como utilizar o Istio fora do cluster de kubernetes, trazendo máquinas virtuais para a malha de serviços. Esse é um tema que tem atraído bastante a atenção da comunidade, para atender a necessidade de cargas de trabalho que não se encaixam bem em containers, mas se beneficiarião das funcionalidades e integração com a malha de serviços, criando malhas híbridas compostas de máquinas virtuais e PODs.</li>
-<li>As <a href="https://github.com/kdop-dev/istio-curso/blob/master/15_referencias.md">PARTE 15</a> e <a href="./16_contribuicoes.md">16</a> são respectivamente as referências, recomendações e materiais para aprofundamento no tema e como contribuir com esse curso. Você poderá enviar pedidos de novos exemplos ou submeter os seus para que façam parte desse curso. Manteremos ele atualizado e crescendo em conteúdo para mantê-lo afiado.</li>
+<li>As <a href="https://github.com/kdop-dev/istio-curso/blob/master/15_referencias.md">PARTE 15</a> e <a href="https://github.com/kdop-dev/istio-curso/blob/master/16_contribuicoes.md">16</a> são respectivamente as referências, recomendações e materiais para aprofundamento no tema e como contribuir com esse curso. Você poderá enviar pedidos de novos exemplos ou submeter os seus para que façam parte desse curso. Manteremos ele atualizado e crescendo em conteúdo para mantê-lo afiado.</li>
 </ul>
 <p>Há três versões deste curso:</p>
 <ul>
 <li><a href="https://github.com/asantos2000/katacoda-scenarios">Github - asantos2000/katacoda-scenarios</a></li>
-<li><a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio | Istio avançado para iniciantes</a></li>
+<li><a href="https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso">Katacoda - Istio avançado para iniciantes</a></li>
 <li><a href="">Udemy - Istio avançado para iniciantes - Anderson/ Daniel e Leonardo - Estimado 20/03/2021</a></li>
 </ul>
 <h2 id="curso-no-github">Curso no Github</h2>
@@ -65,7 +68,8 @@ subtitle: kdop-dev cursos de istio e kubernetes
 <li><a href="https://github.com/rakutentech/jwkgen">jwkgen</a> para gerar certificados.</li>
 </ul>
 <h3 id="generic-services">generic-services</h3>
-<p>O curso utiliza a imagem pronta do generic-services - <a href="assets/exemplos/generic-services">assets/exemplos/generic-services/py</a> e não é necessário nenhum passo adicional para utilizá-la, porém, se você desejar modificá-la e criar sua própria imagem, o código-fonte, bem como instruções para construção e entrega, estão em <a href="exemplos/generic-service/py/README.md">assets/exemplos/generic-services/py/README.md</a></p>
+<p>O curso utiliza a imagem pronta do generic-services - <a href="https://github.com/kdop-dev/istio-curso-files/tree/master/exemplos/generic-service/py">assets/exemplos/generic-services/py</a> e não é necessário nenhum passo adicional para utilizá-la, porém, se você desejar modificá-la e criar sua própria imagem, o código-fonte, bem como instruções para construção e entrega, estão em <a href="exemplos/generic-service/py/README.md">assets/exemplos/generic-services/py/README.md</a></p>
+
 <h2 id="nossos-planos">Nossos planos</h2>
 <ul>
 <li>[X] Versão para download <a href="https://github.com/kdop-dev/istio-curso">github</a> - Dez/2020</li>
