@@ -6,11 +6,9 @@ subtitle: kdop-dev cursos de istio e kubernetes
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/kdop-dev/istio-curso)
 
-Istio avançado para iniciantes (The Advanced Istio for Beginners)
+## Istio avançado para iniciantes (The Advanced Istio for Beginners)
 
-Lançamento: Versão [Katacoda - Istio avançado para iniciantes](https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso)
-
-## Conteúdo
+🚀 Lançamento: Versão [Katacoda - Istio avançado para iniciantes](https://www.katacoda.com/adsantos/courses/istio/kubernetes-istio-curso)
 
 A curva de aprendizado do Istio é relativamente íngreme - por isso projetamos este curso para ser o mais claro e compreensível possível e espero que com as demonstrações práticas você também se divirta ao longo do caminho
 
@@ -54,7 +52,7 @@ Há três versões deste curso:
 
 Para obter os artefatos necessários para o curso, clone esse repositório:
 
-git clone https://github.com/kdop-dev/istio-curso.git
+`git clone https://github.com/kdop-dev/istio-curso.git`
 
 Para iniciar o curso você precisa:
 
@@ -71,7 +69,7 @@ Para iniciar o curso você precisa:
 
 O curso utiliza a imagem pronta do generic-services - [assets/exemplos/generic-services/py](assets/exemplos/generic-services) e não é necessário nenhum passo adicional para utilizá-la, porém, se você desejar modificá-la e criar sua própria imagem, o código-fonte, bem como instruções para construção e entrega, estão em [assets/exemplos/generic-services/py/README.md](exemplos/generic-service/py/README.md)
 
-## Nossos planos
+## Nosso planejamento
 
 - [X] Versão para download [github](https://github.com/kdop-dev/istio-curso) - Dez/2020
 - [X] [Katacoda](https://www.katacoda.com/) - Fev/2020
